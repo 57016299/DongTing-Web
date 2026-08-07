@@ -1,369 +1,91 @@
 <!doctype html>
 <html lang="zh-CN">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="动听音乐官方网页，覆盖 Android、iOS、车机、平板、TV 端、鸿蒙端（开发中）、Windows 与 macOS，集中展示播放器、歌词、音效、铃声剪辑与个性化主题能力。"
-    />
-    <title>动听音乐 | 全平台音乐体验</title>
-    <link rel="icon" type="image/png" href="./assets/brand/logo.png" />
-    <link rel="preload" as="image" href="./assets/screenshots/desktop-list.png" />
+    <meta name="description" content="动听音乐域名迁移通知，正在跳转至新官网" />
+    <title>动听音乐｜域名已迁移</title>
+    <!-- 复用你原网站的样式，务必把 styles.css 上传到旧域名服务器 -->
     <link rel="stylesheet" href="./styles.css?v=20260519" />
-  </head>
-  <body>
-    <div class="site-shell">
-      <header class="topbar">
-        <a class="brand" href="#hero" aria-label="动听音乐首页">
-          <img src="./assets/brand/logo.png" alt="动听音乐" />
-          <span>动听音乐</span>
+    <style>
+        /* 本页面专属布局，不改动原有css类 */
+        .migrate-wrap {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 24px;
+        }
+        .migrate-card {
+            max-width: 620px;
+            width: 100%;
+            text-align: center;
+        }
+        .migrate-old {
+            color: #ff7b7b;
+            word-break: break-all;
+        }
+        .migrate-new {
+            color: #73d084;
+            word-break: break-all;
+        }
+        .migrate-countdown {
+            margin: 28px 0;
+            opacity: 0.75;
+        }
+    </style>
+</head>
+<body>
+<div class="site-shell">
+    <header class="topbar">
+        <a class="brand" href="#" aria-label="动听音乐">
+            <!-- logo资源依赖旧服务器assets目录，没有的话图片会丢失，可以删掉img只保留文字 -->
+            <img src="./assets/brand/logo.png" alt="动听音乐" />
+            <span>动听音乐</span>
         </a>
-        <nav class="nav">
-          <a href="#showcase">界面展示</a>
-          <a href="#features">重点功能</a>
-          <a href="#downloads">平台下载</a>
-        </nav>
-      </header>
+    </header>
 
-      <main>
-        <section class="hero" id="hero">
-          <div class="hero-copy reveal">
-            <p class="eyebrow">Product Overview</p>
-            <h1>面向多终端场景打造的音乐应用</h1>
-            <p class="hero-text">
-              动听音乐覆盖 Android、iOS、车机、平板、TV 端、鸿蒙端（开发中）、Windows 与 macOS。移动端强调高频使用下的流畅体验与个性化设置，桌面端进一步扩展歌词、音效、本地音乐与下载管理能力，不同终端在交互逻辑与内容体验上保持一致。
-            </p>
-            <div class="hero-actions">
-              <a class="button primary" href="#downloads">查看下载入口</a>
-              <a class="button ghost" href="#features">浏览重点功能</a>
-            </div>
-            <ul class="hero-tags" aria-label="支持平台">
-              <li>Android</li>
-              <li>iOS</li>
-              <li>车机端</li>
-              <li>平板端</li>
-              <li>TV 端</li>
-              <li>鸿蒙端（开发中）</li>
-              <li>Windows</li>
-              <li>macOS</li>
-            </ul>
-          </div>
+    <main class="migrate-wrap">
+        <div class="migrate-card">
+            <p class="eyebrow">Site Migration</p>
+            <h1>网站域名即将停用</h1>
 
-          <div class="hero-stage reveal">
-            <div class="device desktop-device">
-              <img src="./assets/screenshots/desktop-list.png" alt="动听音乐桌面版界面" />
-            </div>
-            <div class="device phone-device phone-left">
-              <img src="./assets/screenshots/mobile-home.jpg" alt="动听音乐手机端首页" />
-            </div>
-            <div class="device phone-device phone-right">
-              <img src="./assets/screenshots/mobile-player-dark.jpg" alt="动听音乐手机端播放器" />
-            </div>
-            <div class="floating-note note-a">沉浸播放</div>
-            <div class="floating-note note-b">逐字歌词</div>
-            <div class="floating-note note-c">10 段均衡器</div>
-          </div>
-        </section>
-
-        <section class="platform-strip reveal" aria-labelledby="platform-title">
-          <div class="section-heading">
-            <p class="eyebrow">Platform Coverage</p>
-            <h2 id="platform-title">覆盖 8 类终端的统一产品体系。</h2>
-          </div>
-          <div class="platform-grid">
-            <article>
-              <span>01</span>
-              <h3>手机端</h3>
-              <p>Android 与 iOS 双端覆盖，重点强化首页发现、沉浸播放器、主题壁纸与铃声剪辑。</p>
-            </article>
-            <article>
-              <span>02</span>
-              <h3>车机端</h3>
-              <p>围绕驾驶场景优化，延续大按钮、直达播放与蓝牙歌词等能力，降低操作负担。</p>
-            </article>
-            <article>
-              <span>03</span>
-              <h3>平板端</h3>
-              <p>更大可视区域带来更舒展的歌词、歌单与播放布局，兼顾横竖屏浏览。</p>
-            </article>
-            <article>
-              <span>04</span>
-              <h3>电脑端</h3>
-              <p>Windows 与 macOS 桌面版进一步扩展本地管理、下载队列、桌面歌词与专业音效控制。</p>
-            </article>
-            <article>
-              <span>05</span>
-              <h3>TV 端</h3>
-              <p>面向客厅大屏与遥控器操作，强化横向浏览、焦点状态、远距离可读性与家庭播放场景。</p>
-            </article>
-            <article>
-              <span>06</span>
-              <h3>鸿蒙端（开发中）</h3>
-              <p>鸿蒙版本正在开发中，将围绕系统生态适配、跨设备协同与一致的播放体验持续完善。</p>
-            </article>
-          </div>
-        </section>
-
-        <section class="showcase" id="showcase">
-          <div class="section-heading reveal">
-            <p class="eyebrow">Visual Showcase</p>
-            <h2>用真实界面呈现产品能力与使用场景。</h2>
-          </div>
-
-          <div class="showcase-block mobile-block reveal">
-            <div class="showcase-copy">
-              <p class="label">Mobile Experience</p>
-              <h3>从首页推荐到播放页，再到主题、壁纸与图标设置，移动端强调效率、沉浸感与个性化表达。</h3>
-              <p>
-                这一部分重点展示首页推荐、沉浸播放、主题壁纸、应用图标以及设置层的个性化入口，适合覆盖用户最常用、最直观的听歌场景。
-              </p>
-            </div>
-            <div class="phone-gallery">
-              <figure class="phone-shot tall">
-                <img src="./assets/screenshots/mobile-home.jpg" alt="手机端首页推荐" loading="lazy" />
-              </figure>
-              <figure class="phone-shot">
-                <img src="./assets/screenshots/mobile-playlist.jpg" alt="手机端歌单详情页" loading="lazy" />
-              </figure>
-              <figure class="phone-shot">
-                <img src="./assets/screenshots/mobile-player-light.jpg" alt="手机端浅色播放器" loading="lazy" />
-              </figure>
-              <figure class="phone-shot">
-                <img src="./assets/screenshots/mobile-player-catchcatch.jpg" alt="手机端浅色播放器歌曲页" loading="lazy" />
-              </figure>
-              <figure class="phone-shot">
-                <img src="./assets/screenshots/mobile-theme.jpg" alt="手机端主题与壁纸" loading="lazy" />
-              </figure>
-              <figure class="phone-shot">
-                <img src="./assets/screenshots/mobile-player-dark.jpg" alt="手机端深色播放器" loading="lazy" />
-              </figure>
-              <figure class="phone-shot">
-                <img src="./assets/screenshots/mobile-player-cover.jpg" alt="手机端专辑封面播放器" loading="lazy" />
-              </figure>
-              <figure class="phone-shot">
-                <img src="./assets/screenshots/mobile-lyrics-focus.jpg" alt="手机端沉浸歌词播放页" loading="lazy" />
-              </figure>
-              <figure class="phone-shot">
-                <img src="./assets/screenshots/mobile-icon-shop.jpg" alt="手机端应用图标选择" loading="lazy" />
-              </figure>
-            </div>
-          </div>
-
-          <div class="showcase-block desktop-block reveal">
-            <div class="desktop-gallery">
-              <figure class="desktop-shot wide">
-                <img src="./assets/screenshots/desktop-list.png" alt="桌面版歌单与播放界面" loading="lazy" />
-              </figure>
-              <figure class="desktop-shot">
-                <img src="./assets/screenshots/desktop-lyrics-1.png" alt="桌面版歌词播放界面一" loading="lazy" />
-              </figure>
-              <figure class="desktop-shot">
-                <img src="./assets/screenshots/desktop-lyrics-2.png" alt="桌面版歌词播放界面二" loading="lazy" />
-              </figure>
-              <figure class="desktop-shot wide">
-                <img src="./assets/screenshots/desktop-lyrics-3.jpg" alt="桌面版横向歌词播放界面" loading="lazy" />
-              </figure>
-            </div>
-            <div class="showcase-copy">
-              <p class="label">Desktop Experience</p>
-              <h3>桌面端进一步强化歌词、下载、本地音乐库与音效控制，更适合长时间播放与深度使用场景。</h3>
-              <p>
-                更大的界面空间承载更完整的信息结构，适合桌面办公、专注聆听以及对播放控制有更高要求的用户。
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section class="feature-lab" id="features">
-          <div class="section-heading reveal">
-            <p class="eyebrow">Key Features</p>
-            <h2>围绕真实使用场景整理六项核心能力。</h2>
-          </div>
-          <div class="feature-lab-grid">
-            <div class="feature-list reveal" role="tablist" aria-label="重点功能列表">
-              <button
-                class="feature-item is-active"
-                type="button"
-                role="tab"
-                aria-selected="true"
-                data-title="沉浸式播放器与逐字歌词"
-                data-copy="播放页支持更聚焦的封面展示、歌词高亮、翻译歌词与歌词偏移调节，在视觉表现与信息可读性之间取得更好的平衡。"
-                data-points="逐字歌词动画,翻译歌词开关,歌词延迟微调,深浅双风格播放器"
-                data-image="./assets/screenshots/mobile-player-dark.jpg"
-              >
-                <span>01</span>
-                <strong>沉浸式播放器</strong>
-              </button>
-              <button
-                class="feature-item"
-                type="button"
-                role="tab"
-                aria-selected="false"
-                data-title="10 段均衡器与设备音效适配"
-                data-copy="桌面端提供音效面板、强度调节、设备预设与 10 段自定义均衡器，可针对耳机、外放、蓝牙与车载场景进行更精细的声音控制。"
-                data-points="10 段 EQ,设备适配预设,前级增益,音效强度调节"
-                data-image="./assets/screenshots/desktop-lyrics-1.png"
-              >
-                <span>02</span>
-                <strong>专业均衡器</strong>
-              </button>
-              <button
-                class="feature-item"
-                type="button"
-                role="tab"
-                aria-selected="false"
-                data-title="铃声剪辑与片段导出"
-                data-copy="支持从歌曲中截取更合适的片段用于铃声制作，缩短从内容播放到个性化使用之间的操作路径。"
-                data-points="歌曲片段裁剪,铃声快速导出,贴近日常使用,与播放场景自然衔接"
-                data-image="./assets/screenshots/mobile-player-cover.jpg"
-              >
-                <span>03</span>
-                <strong>铃声剪辑</strong>
-              </button>
-              <button
-                class="feature-item"
-                type="button"
-                role="tab"
-                aria-selected="false"
-                data-title="主题壁纸、应用图标与界面个性化"
-                data-copy="支持预设主题、自定义壁纸、主题色提取与应用图标切换，让产品在统一视觉框架下保留充分的个性化空间。"
-                data-points="预设主题切换,上传壁纸生成专属配色,应用图标商店,首页与播放页统一风格"
-                data-image="./assets/screenshots/mobile-theme.jpg"
-              >
-                <span>04</span>
-                <strong>主题与图标</strong>
-              </button>
-              <button
-                class="feature-item"
-                type="button"
-                role="tab"
-                aria-selected="false"
-                data-title="桌面歌词、蓝牙歌词与多场景歌词联动"
-                data-copy="从播放页歌词到桌面歌词，再到蓝牙歌词和状态栏歌词，歌词能力覆盖更多终端与播放场景，提升信息连续性。"
-                data-points="桌面歌词悬浮窗,蓝牙歌词同步,状态栏歌词,歌词位置与样式控制"
-                data-image="./assets/screenshots/desktop-lyrics-2.png"
-              >
-                <span>05</span>
-                <strong>多场景歌词系统</strong>
-              </button>
-              <button
-                class="feature-item"
-                type="button"
-                role="tab"
-                aria-selected="false"
-                data-title="本地音乐、下载管理与歌单生态"
-                data-copy="支持排行榜、歌单广场、最近播放、我的喜欢、本地音乐与下载管理，同时保留无损音质与更完整的本地库能力。"
-                data-points="歌单广场与排行榜,本地音乐与下载管理,无损音质支持,跨源歌单导入/同步"
-                data-image="./assets/screenshots/desktop-list.png"
-              >
-                <span>06</span>
-                <strong>内容与本地管理</strong>
-              </button>
-            </div>
-
-            <article class="feature-preview reveal">
-              <div class="feature-preview-media">
-                <img
-                  id="feature-image"
-                  src="./assets/screenshots/mobile-player-dark.jpg"
-                  alt="重点功能预览图"
-                />
-              </div>
-              <div class="feature-preview-copy">
-                <p class="label">Feature Focus</p>
-                <h3 id="feature-title">沉浸式播放器与逐字歌词</h3>
-                <p id="feature-copy">
-                  播放页支持更聚焦的封面展示、歌词高亮、翻译歌词与歌词偏移调节，在视觉表现与信息可读性之间取得更好的平衡。
+            <div style="margin-top:24px;line-height:1.8;">
+                <p>旧域名：<span class="migrate-old">www.dongting.zh.kg</span></p>
+                <p style="margin-top:12px;">新官网：<a class="migrate-new" href="https://dongting.57016299.xyz">dongting.57016299.xyz</a></p>
+                <p style="margin-top:16px;">
+                    服务器已从海外更换至国内，访问速度更快，加载更流畅，不再卡顿。
                 </p>
-                <ul id="feature-points" class="feature-points">
-                  <li>逐字歌词动画</li>
-                  <li>翻译歌词开关</li>
-                  <li>歌词延迟微调</li>
-                  <li>深浅双风格播放器</li>
-                </ul>
-              </div>
-            </article>
-          </div>
-        </section>
+            </div>
 
-        <section class="story-band reveal">
-          <div class="story-copy">
-            <p class="eyebrow">What Makes It Official</p>
-            <h2>官网聚焦可感知的产品能力、平台覆盖与版本入口。</h2>
-          </div>
-          <div class="story-metrics">
-            <div>
-              <strong>8 类终端</strong>
-              <span>覆盖手机、车机、平板、TV、鸿蒙、Windows 与 macOS 等主要使用场景</span>
+            <div class="migrate-countdown">
+                将在 <span id="count">5</span> 秒后自动跳转至新官网
             </div>
-            <div>
-              <strong>10 段 EQ</strong>
-              <span>桌面端支持音效面板、自定义均衡器与设备适配</span>
-            </div>
-            <div>
-              <strong>多层歌词</strong>
-              <span>逐字、翻译、桌面、蓝牙与状态栏歌词贯穿不同场景</span>
-            </div>
-          </div>
-        </section>
 
-        <section class="downloads reveal" id="downloads">
-          <div class="section-heading">
-            <p class="eyebrow">Download & Deploy</p>
-            <h2>提供统一的下载入口与多平台版本说明。</h2>
-          </div>
-          <div class="download-layout">
-            <div class="download-copy">
-              <p>
-                当前已提供 Android 版本下载入口。iPhone、iPad、Windows、macOS、车机、平板、TV 端与鸿蒙端（开发中），可通过官方群或 QQ 联系获取最新版本与适配说明。
-              </p>
+            <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+                <a class="button primary" href="https://dongting.57016299.xyz">立即前往新官网</a>
+                <a class="button ghost" href="https://dongting.57016299.xyz">复制新域名手动访问</a>
             </div>
-            <div class="download-buttons">
-              <a
-                class="download-chip"
-                href="https://share.feijipan.com/s/Vj3Gkehq"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Android 下载
-              </a>
-              <button class="download-chip contact-trigger" type="button">iPhone / iPad 下载</button>
-              <button class="download-chip contact-trigger" type="button">Windows 下载</button>
-              <button class="download-chip contact-trigger" type="button">macOS 下载</button>
-              <button class="download-chip contact-trigger" type="button">车机版介绍</button>
-              <button class="download-chip contact-trigger" type="button">平板版介绍</button>
-              <button class="download-chip contact-trigger" type="button">TV 端介绍</button>
-              <button class="download-chip contact-trigger" type="button">鸿蒙端开发中</button>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <footer class="footer">
-        <p>© 动听音乐 Official Site</p>
-        <p>为多终端音乐体验而设计。</p>
-      </footer>
-    </div>
-
-    <div class="contact-modal" id="contact-modal" aria-hidden="true">
-      <div class="contact-backdrop" data-close-contact="true"></div>
-      <div class="contact-panel" role="dialog" aria-modal="true" aria-labelledby="contact-title">
-        <button class="contact-close" type="button" aria-label="关闭提示" data-close-contact="true">
-          ×
-        </button>
-        <p class="eyebrow">Version Inquiry</p>
-        <h3 id="contact-title">其他版本请通过 QQ 联系了解</h3>
-        <p class="contact-text">
-          可加入 QQ 群：<strong>1091921119</strong> 了解，或添加 QQ：<strong>3395452008</strong>。
-        </p>
-        <p class="contact-text">添加 QQ 时请备注你的来意，方便更快处理版本咨询与下载需求。</p>
-        <div class="contact-actions">
-          <button class="button primary" type="button" data-close-contact="true">我知道了</button>
         </div>
-      </div>
-    </div>
+    </main>
 
-    <script src="./script.js?v=20260519-2"></script>
-  </body>
+    <footer class="footer">
+        <p>© 动听音乐 Official Site</p>
+    </footer>
+</div>
+
+<script>
+    let sec = 5;
+    const countDom = document.getElementById('count');
+    const target = "https://dongting.57016299.xyz";
+    const timer = setInterval(()=>{
+        sec -= 1;
+        countDom.innerText = sec;
+        if(sec <= 0){
+            clearInterval(timer);
+            window.location.href = target;
+        }
+    },1000);
+</script>
+</body>
 </html>
